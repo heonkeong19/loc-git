@@ -1,0 +1,91 @@
+###   p.194 예제
+#aa = []
+#for i in range(0,100):
+#    aa.append(0)
+#print(aa)
+#print(len(aa))
+
+###   p.195 예제
+#aa = []
+#for i in range(0, 4): # 4칸짜리 리스트를 만드는데 그 안의 값은 다 0
+#    aa.append(0)
+#hap = 0 # 확인하는 변수 선언 후 초기화
+
+#for i in range(0,4): # 0,1,2,3 4번 실행
+#    aa[i] = int(input(str(i+1)+"번째 숫자: ")) # 리스트 다음에 변수가 들어감. 넘버링 시 변수 적는 것도 사용가능하다.
+#                      ## aa라는 리스트의 0번에 input하는 것. 우리가 임의의 숫자를 입력하면 각 칸에 우리가 입력한 숫자가 들어감. 실행은 0,1,2,3이지만 번째는 +1 해줘야
+
+#hap = aa[0]+aa[1]+aa[2]+aa[3] # 리스트에 있는 값들을 다 더함
+
+#print("합계 ==> %d" %hap)
+
+
+### p.196 문제 
+### 합계를 내는 마지막 for문을 while문으로
+#i = 0
+#j = 0
+#aa = []
+
+#while i < 10:
+#    aa.append(0)
+#    i = i + 1
+
+#hap = 0
+
+#while j < 10: #while문에서는 변수를 다르게 설정해줘야 한다. for문에서는 중첩으로 하려거든 같은 변수명 써도 상관없지만 while문은 아님
+#    aa[j] = int(input(str(j+1)+"번째 숫자: "))
+#    j = j + 1
+#hap = aa[0]+aa[1]+aa[2]+aa[3]+aa[4]+aa[5]+aa[6]+aa[7]+aa[8]+aa[9]
+
+#print("나와랏! : %d" %hap)
+
+### p.197 예제
+### 100개의 리스트 aa를 2의 배수로 초기화한 다음 리스트 bb에 역순으로 넣는 과정
+#aa = []
+#bb = []
+#value = 0
+
+#for i in range(0, 100):
+#    aa.append(value)
+#    value += 2
+    
+#for i in range(0, 100):
+#    bb.append(aa[99-i])
+
+#print("bb[0]은 %d, bb[99]는 %d 입력됨" %(bb[0], bb[99]))
+
+### p.198 문제
+### 3의 배수를 aa에 200개 입력. bb에 역순 입력, 0과 199값 출력
+
+#aa = []
+#bb = []
+#value = 0
+
+#for i in range(0,200): 
+#    aa.append(value)
+#    value += 3
+
+#for i in range(0, 200):
+#    bb.append(aa[199-i])
+
+#print("bb[0]은 %d, bb[99]는 %d 입력됨" %(bb[0], bb[99]))
+
+### p.198 예제
+#aa = [10, 20, 30, 40]
+#print("aa[-1]은 %d, aa[-2]는 %d"%(aa[-1], aa[-2]))
+
+###
+#aa = [10, 20, 30, 40]
+#print(aa[0:3])
+#print(aa[2:4])
+
+### p.199
+#aa = [10, 20, 30, 40]
+#print(aa[2:]) # 2는 포함하지 않고 3부터 시작
+#print(aa[:2]) # 2는 포함하지 않고 0, 1까지만
+
+####
+#aa = [10, 20, 30]
+#bb = [40, 50, 60]
+#print(aa+bb)
+#print(aa*3)
